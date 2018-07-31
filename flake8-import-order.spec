@@ -4,7 +4,7 @@
 #
 Name     : flake8-import-order
 Version  : 0.18
-Release  : 1
+Release  : 2
 URL      : https://files.pythonhosted.org/packages/5b/5b/fd248ea91880a7b5e4754f396f4598e8244f28df0d0f8790453acbafc7c4/flake8-import-order-0.18.tar.gz
 Source0  : https://files.pythonhosted.org/packages/5b/5b/fd248ea91880a7b5e4754f396f4598e8244f28df0d0f8790453acbafc7c4/flake8-import-order-0.18.tar.gz
 Summary  : Flake8 and pylama plugin that checks the ordering of import statements.
@@ -17,6 +17,7 @@ Requires: enum34
 Requires: pycodestyle
 Requires: setuptools
 BuildRequires : buildreq-distutils3
+BuildRequires : enum34
 BuildRequires : pycodestyle
 BuildRequires : setuptools
 
@@ -59,7 +60,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1533076537
+export SOURCE_DATE_EPOCH=1533080175
 python3 setup.py build -b py3
 
 %install
