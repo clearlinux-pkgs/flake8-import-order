@@ -1,5 +1,5 @@
 PKG_NAME := flake8-import-order
-URL = https://files.pythonhosted.org/packages/5b/5b/fd248ea91880a7b5e4754f396f4598e8244f28df0d0f8790453acbafc7c4/flake8-import-order-0.18.tar.gz
+URL = https://files.pythonhosted.org/packages/81/47/5f2cea0164e77dd40726d83b4c865c2a701f60b73cb6af7b539cd42aafb4/flake8-import-order-0.18.1.tar.gz
 ARCHIVES = 
 
 include ../common/Makefile.common
