@@ -4,7 +4,7 @@
 #
 Name     : flake8-import-order
 Version  : 0.18.1
-Release  : 8
+Release  : 9
 URL      : https://files.pythonhosted.org/packages/81/47/5f2cea0164e77dd40726d83b4c865c2a701f60b73cb6af7b539cd42aafb4/flake8-import-order-0.18.1.tar.gz
 Source0  : https://files.pythonhosted.org/packages/81/47/5f2cea0164e77dd40726d83b4c865c2a701f60b73cb6af7b539cd42aafb4/flake8-import-order-0.18.1.tar.gz
 Summary  : Flake8 and pylama plugin that checks the ordering of import statements.
@@ -20,9 +20,13 @@ BuildRequires : pycodestyle
 BuildRequires : setuptools
 
 %description
+flake8-import-order
 ===================
-        
-        |Build Status|
+|Build Status|
+A `flake8 <http://flake8.readthedocs.org/en/latest/>`__ and `Pylama
+<https://github.com/klen/pylama>`__ plugin that checks the ordering of
+your imports. It does not check anything else about the
+imports. Merely that they are grouped and ordered correctly.
 
 %package license
 Summary: license components for the flake8-import-order package.
@@ -45,6 +49,7 @@ python components for the flake8-import-order package.
 Summary: python3 components for the flake8-import-order package.
 Group: Default
 Requires: python3-core
+Provides: pypi(flake8-import-order)
 
 %description python3
 python3 components for the flake8-import-order package.
@@ -52,13 +57,15 @@ python3 components for the flake8-import-order package.
 
 %prep
 %setup -q -n flake8-import-order-0.18.1
+cd %{_builddir}/flake8-import-order-0.18.1
 
 %build
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1571079153
+export SOURCE_DATE_EPOCH=1582924078
+# -Werror is for werrorists
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
