@@ -4,7 +4,7 @@
 #
 Name     : flake8-import-order
 Version  : 0.18.1
-Release  : 23
+Release  : 24
 URL      : https://files.pythonhosted.org/packages/81/47/5f2cea0164e77dd40726d83b4c865c2a701f60b73cb6af7b539cd42aafb4/flake8-import-order-0.18.1.tar.gz
 Source0  : https://files.pythonhosted.org/packages/81/47/5f2cea0164e77dd40726d83b4c865c2a701f60b73cb6af7b539cd42aafb4/flake8-import-order-0.18.1.tar.gz
 Summary  : Flake8 and pylama plugin that checks the ordering of import statements.
@@ -62,15 +62,15 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1583534582
+export SOURCE_DATE_EPOCH=1635728326
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
 export NM=gcc-nm
-export CFLAGS="$CFLAGS -O3 -ffat-lto-objects -flto=4 "
-export FCFLAGS="$CFLAGS -O3 -ffat-lto-objects -flto=4 "
-export FFLAGS="$CFLAGS -O3 -ffat-lto-objects -flto=4 "
-export CXXFLAGS="$CXXFLAGS -O3 -ffat-lto-objects -flto=4 "
+export CFLAGS="$CFLAGS -O3 -ffat-lto-objects -flto=auto "
+export FCFLAGS="$FFLAGS -O3 -ffat-lto-objects -flto=auto "
+export FFLAGS="$FFLAGS -O3 -ffat-lto-objects -flto=auto "
+export CXXFLAGS="$CXXFLAGS -O3 -ffat-lto-objects -flto=auto "
 export MAKEFLAGS=%{?_smp_mflags}
 python3 setup.py build
 
